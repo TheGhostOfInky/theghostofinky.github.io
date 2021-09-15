@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans')
+$font: 'Open Sans', sans-serif
+$light: #ccc
+$lightlt: #bbb
+$dark: #333
+$darklt: #444
+
+//Default style
+html
+    padding: 0px
+    font-family: $font
+    background-color: $light
+body
+    margin: auto
+    text-align: center
+    align-items: center
+p
+    font-family: inherit
+    font-size: 2em
+    max-width: 75%
+    margin: auto
+a
+    font-family: inherit
+    font-size: 3em
+    display: block
+h1
+    font-family: inherit
+    text-align: center 
+    font-size: 5em
+    font-weight: bold
+h2
+    font-size: 3em
+img
+    max-width: 256px
+div.image
+    padding: 20px
+    display: block
+    width: 20%
+    float: left
+div.box 
+    width: 90%
+    max-width: 900px
+    display: block
+    margin: auto
+    align-items: center
+div.entry 
+    display: flex
+    border-radius: 32px
+    background: $lightlt
+    width: 100%
+    margin: 20px auto
+    padding: 5px
+    float: left
+    align-items: center 
+div.text
+    display: inline-block
+    text-align: center
+    width: 75%
+
+
+//Dark Theme
+@media(prefers-color-scheme: dark)
+    html
+        background-color: $dark
+    div.entry
+        background-color: $darklt
