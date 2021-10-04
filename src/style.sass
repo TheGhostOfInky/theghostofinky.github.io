@@ -23,6 +23,9 @@ a
     font-family: inherit
     font-size: 3em
     display: block
+    color: $dark
+a:visited
+    color: $darklt
 h1
     font-family: inherit
     text-align: center 
@@ -62,5 +65,11 @@ div.text
 @media(prefers-color-scheme: dark)
     html
         background-color: $dark
+        color: $light
     div.entry
         background-color: $darklt
+        color: $lightlt
+    a
+        color: $light
+    a:visited
+        color: $lightlt

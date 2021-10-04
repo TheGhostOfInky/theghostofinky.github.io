@@ -22,6 +22,11 @@ a {
   font-family: inherit;
   font-size: 3em;
   display: block;
+  color: #333;
+}
+
+a:visited {
+  color: #444;
 }
 
 h1 {
@@ -74,9 +79,19 @@ div.text {
 @media (prefers-color-scheme: dark) {
   html {
     background-color: #333;
+    color: #ccc;
   }
 
   div.entry {
     background-color: #444;
+    color: #bbb;
+  }
+
+  a {
+    color: #ccc;
+  }
+
+  a:visited {
+    color: #bbb;
   }
 }
