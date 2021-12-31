@@ -8,8 +8,7 @@
             "type": "shell",
             "command": "sass",
             "args": [
-                "src:dist",
-                "--no-source-map"
+                "src:dist"
             ],
             "problemMatcher": [],
             "group": {
