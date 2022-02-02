@@ -2,8 +2,10 @@
 $font: 'Open Sans', sans-serif
 $light: #ccc
 $lightlt: #bbb
+$lighthov: #aaa
 $dark: #333
 $darklt: #444
+$darkhov: #555
 
 //Default style
 html
@@ -14,15 +16,16 @@ body
     margin: auto
     text-align: center
     align-items: center
+    width: 100%
 p
     font-family: inherit
     font-size: 2em
     max-width: 75%
-    margin: auto
+    margin: 5px auto
 a
     font-family: inherit
-    font-size: 3em
     display: block
+    text-decoration: none
     color: $dark
 a:visited
     color: $darklt
@@ -50,16 +53,40 @@ div.entry
     display: flex
     border-radius: 32px
     background: $lightlt
+    min-width: 700px
     width: 100%
     margin: 20px auto
     padding: 5px
     float: left
     align-items: center 
+    text-decoration: none
+    h2
+        margin-top: 0px
+        margin-bottom: 0px
+    &:hover
+        background-color: $lighthov
 div.text
+    margin-left: 50px
     display: inline-block
     text-align: center
     width: 75%
+//Github corner
+.github-corner:hover .octo-arm 
+    animation: octocat-wave 560ms ease-in-out
 
+@keyframes octocat-wave 
+    0%,100% 
+        transform: rotate(0)
+    20%,60%
+        transform: rotate(-25deg)
+    40%,80% 
+        transform: rotate(10deg)
+
+@media (max-width:500px) 
+    .github-corner:hover .octo-arm 
+        animation: none
+    .github-corner .octo-arm 
+        animation: octocat-wave 560ms ease-in-out
 
 //Dark Theme
 @media(prefers-color-scheme: dark)
@@ -69,6 +96,8 @@ div.text
     div.entry
         background-color: $darklt
         color: $lightlt
+        &:hover
+            background-color: $darkhov
     a
         color: $light
     a:visited
