@@ -1,0 +1,8 @@
+{
+	"devDependencies": {
+		"sass": "^1.63.4"
+	},
+	"scripts": {
+		"build": "sass src:dist --style=compressed"
+	}
+}
